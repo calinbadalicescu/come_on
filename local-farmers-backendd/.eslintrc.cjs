@@ -8,6 +8,10 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 'latest',
   },
+  globals: {
+    fetch: 'readonly',
+    AbortController: 'readonly',
+  },
   rules: {
     'no-console': 'off',
     'no-unused-vars': ['error', { argsIgnorePattern: '^_' }],

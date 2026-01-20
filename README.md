@@ -5,6 +5,7 @@ Monorepo with a Node/Express backend and a React/Vite frontend.
 ## Project Structure
 - `local-farmers-backendd/` - Express API (`src/`, `tests/`)
 - `local-farmers-frontendd/` - React UI (`src/`, `src/__tests__/`, `src/styles/`)
+- `data/` - file-based JSON storage used by the API (users, vendors, products, markets, cache)
 
 ## Quick Start
 Backend:
@@ -42,3 +43,6 @@ Run these inside each module:
 npm run lint
 npm run format
 ```
+
+## File-Based Storage Notes
+This project persists data in JSON files under `data/`. It works well locally and on hosts with persistent disks (VPS, Docker, Render with disk). On serverless platforms, file writes can be temporary or blocked.

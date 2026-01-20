@@ -23,3 +23,13 @@ npm run dev
 ## Environment
 - `PORT` - API port (default: 3000)
 - `CORS_ORIGINS` - comma-separated list of allowed origins
+
+## File-based Storage
+Data is stored in JSON files under the repo root `data/` directory (users, vendors, products, markets, cache). This is suitable for local development and hosts with persistent disks.
+
+## Optional External API Configuration
+- `USDA_MARKETNEWS_API_KEY` - API key for USDA Market News (if available)
+- `USDA_MARKETNEWS_BASE_URL` - override Market News base URL
+- `FAOSTAT_BASE_URL` - override FAOSTAT base URL
+- `PEXELS_API_KEY` - API key for Pexels image search
+- `PEXELS_BASE_URL` - override Pexels base URL
